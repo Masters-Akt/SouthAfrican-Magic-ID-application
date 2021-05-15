@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 String sNationality;
                 if(nationality==0) sNationality=getString(R.string.SAcitizen);
                 else sNationality=getString(R.string.permanentResident);
-                String text = getString(R.string.dob)+dob+getString(R.string.newLineChar)+getString(R.string.gender)+sGender+getString(R.string.newLineChar)+getString(R.string.nationality)+sNationality;
+                String text = getString(R.string.dob)+dob+"\n"+getString(R.string.gender)+sGender+"\n"+getString(R.string.nationality)+sNationality;
                 tvResults.setText(text);
                 tvResults.setVisibility(View.VISIBLE);
             }
